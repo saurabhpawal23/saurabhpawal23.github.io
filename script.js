@@ -8,6 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+
 // Typing effect
 new Typed("#typed", {
   strings: [
@@ -48,10 +49,9 @@ tsParticles.load("tsparticles", {
   }
 });
 
-
+// Contact form AJAX with feedback
 document.getElementById("contact-form").addEventListener("submit", function(e) {
   e.preventDefault();
-
   const formData = new FormData(this);
   fetch("https://formsubmit.co/ajax/21129saurabh@gmail.com", {
     method: "POST",
@@ -59,14 +59,58 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
     body: formData
   })
   .then(response => {
+    const msg = document.getElementById("form-response");
     if (response.ok) {
-      document.getElementById("form-response").textContent = "✅ Message sent successfully!";
+      msg.textContent = "✅ Message sent successfully!";
+      msg.style.color = "limegreen";
       this.reset();
     } else {
-      document.getElementById("form-response").textContent = "❌ Something went wrong. Try again.";
+      msg.textContent = "❌ Something went wrong. Try again.";
+      msg.style.color = "crimson";
     }
   })
   .catch(() => {
-    document.getElementById("form-response").textContent = "⚠️ Network error. Check your internet.";
+    const msg = document.getElementById("form-response");
+    msg.textContent = "⚠️ Network error. Check your internet.";
+    msg.style.color = "orange";
+  });
+});
+
+
+const toggle = document.querySelector('.theme-toggle');
+const toggleText = toggle.querySelector('.toggle-text');
+const toggleIcon = toggle.querySelector('.toggle-icon');
+
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  if (document.body.classList.contains('dark-mode')) {
+    toggleText.textContent = 'Dark Mode';
+    toggleIcon.classList.remove('fa-moon');
+    toggleIcon.classList.add('fa-sun');
+  } else {
+    toggleText.textContent = 'Light Mode';
+    toggleIcon.classList.remove('fa-sun');
+    toggleIcon.classList.add('fa-moon');
+  }
+});
+
+
+// Project filter logic
+const filterButtons = document.querySelectorAll(".filter-buttons button");
+const projectCards = document.querySelectorAll(".project-card");
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    filterButtons.forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    const filter = button.getAttribute("data-filter");
+    projectCards.forEach(card => {
+      if (filter === "all" || card.dataset.category === filter) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
   });
 });
