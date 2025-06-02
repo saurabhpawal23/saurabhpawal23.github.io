@@ -1,33 +1,36 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9;
+  background-color: #f9f9f9;
   color: #333;
-  line-height: 1.6;
 }
 
 .container {
-  max-width: 960px;
+  width: 90%;
+  max-width: 1000px;
   margin: auto;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 header {
-  background: #1e1e2f;
-  color: #fff;
-  padding: 40px 20px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 60px 20px;
   text-align: center;
 }
 
-.tagline {
-  font-size: 1.1rem;
-  color: #ccc;
-  margin-top: 5px;
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
 nav {
@@ -43,72 +46,62 @@ nav a {
 }
 
 nav a:hover {
-  color: #00bfff;
+  color: #00c3ff;
 }
 
-section {
-  padding: 40px 20px;
-}
-
-h2 {
-  border-bottom: 2px solid #1e1e2f;
-  padding-bottom: 10px;
+section h2 {
+  font-size: 2rem;
   margin-bottom: 20px;
+  color: #203a43;
 }
 
-.project {
-  background: #fff;
-  padding: 20px;
-  margin-bottom: 30px;
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: white;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
-.project h3 {
-  margin-top: 0;
+.project-card:hover {
+  transform: translateY(-5px);
 }
 
-.btn {
+.project-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card a {
   display: inline-block;
   margin-top: 10px;
-  padding: 10px 15px;
-  background: #1e1e2f;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #00bfff;
-}
-
-footer {
-  background: #1e1e2f;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-a {
   color: #007bff;
   text-decoration: none;
+  font-weight: 600;
 }
 
-a:hover {
+.project-card a:hover {
   text-decoration: underline;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
+footer {
+  background: #203a43;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
 
-  .btn {
-    width: 100%;
-    text-align: center;
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
   }
 }
