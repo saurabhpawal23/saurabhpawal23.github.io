@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg, #4624df, #260727, #1ed618);
+  background: linear-gradient(135deg, #a0b109, #583b0f, #06d17c);
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -289,14 +289,13 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px;
-  background: linear-gradient(135deg, #4624df, #260727, #1ed618);
   padding: 40px;
   border-radius: 12px;
 }
 
 /* Dark contact section */
 .contact-dark {
-  background-color: #1d1c1c;
+  background-color: #000000;
   color: #fff6f6;
   padding: 60px 20px 40px;
 }
@@ -412,4 +411,68 @@ footer {
   .contact-info, .contact-form {
     flex: 1 1 100%;
   }
+}
+
+.skills-title {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #222;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+  letter-spacing: 0.05em;
+}
+
+.extended-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.skill-box {
+  background-color: #f4f7f9;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  transition: background-color 0.3s ease;
+  cursor: default;
+}
+
+.skill-box i {
+  color: #4caf50;
+  font-size: 1.1rem;
+}
+
+.skill-box:hover {
+  background-color: #e0f2e9;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tags span {
+  background: #4caf50;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(76,175,80,0.4);
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.tags span:hover {
+  background-color: #3a9d45;
 }
