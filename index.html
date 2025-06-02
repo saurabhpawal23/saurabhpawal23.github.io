@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Your Name | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header>
     <div class="container">
       <h1>Your Name</h1>
-      <p class="tagline">Web Developer | Designer | Creator</p>
+      <p>Frontend Developer | Designer | Coder</p>
       <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -21,39 +21,46 @@
     </div>
   </header>
 
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p>
-      Hi, I'm <strong>[Your Name]</strong>, a passionate web developer who builds clean, fast, and responsive websites. I love turning creative ideas into real-world applications and solving problems with code.
-    </p>
-  </section>
-
-  <section id="projects" class="container">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project One</h3>
-      <p>A brief description of your first project. Explain what problem it solves or what technologies you used.</p>
-      <a href="#" class="btn">View Project</a>
-    </div>
-    <div class="project">
-      <h3>Project Two</h3>
-      <p>A brief description of your second project. Mention features, stack, or outcome.</p>
-      <a href="#" class="btn">View Project</a>
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m [Your Name], a web developer who enjoys crafting beautiful, interactive, and accessible websites. I’m passionate about learning new technologies and solving real-world problems through code.</p>
     </div>
   </section>
 
-  <section id="contact" class="container">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
-    <p>GitHub: <a href="#">github.com/yourusername</a></p>
+  <section id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/project1.jpg" alt="Project 1">
+          <h3>Project One</h3>
+          <p>A short description of your first project.</p>
+          <a href="#">View Demo</a>
+        </div>
+        <div class="project-card">
+          <img src="images/project2.jpg" alt="Project 2">
+          <h3>Project Two</h3>
+          <p>A short description of your second project.</p>
+          <a href="#">View Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
+      <p>GitHub: <a href="#">github.com/yourusername</a></p>
+    </div>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </div>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
