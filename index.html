@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saurabh | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Saurabh Pawal — Software Developer, Fullstack Lead, and AI Integration Expert."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+
+  <body>
+    <div
+      class="theme-toggle"
+      title="Toggle Dark Mode"
+      role="button"
+      tabindex="0"
+      aria-label="Toggle dark mode"
+    >
+      <span class="toggle-text">Light Mode</span>
+      <i class="fas fa-moon toggle-icon"></i>
+    </div>
+
+    <div id="progress-bar"></div>
+    <div id="tsparticles"></div>
+
+    <header class="hero-section" id="hero">
+      <div class="container">
+        <h1>SAURABH PAWAL</h1>
+        <h2 class="tagline"><span id="typed"></span></h2>
+        <p>Software Developer | Fullstack Lead | AI Integration Expert</p>
+        <div class="social-icons">
+          <a
+            href="https://github.com/saurabhpawal23"
+            target="_blank"
+            aria-label="GitHub Profile"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/saurabhpawal"
+            target="_blank"
+            aria-label="LinkedIn Profile"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="mailto:21129saurabh@gmail.com" aria-label="Email Me"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+        <nav id="navbar">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about" data-aos="fade-up">
+      <div class="container about-content">
+        <div class="about-wrapper">
+          <!-- Left Column: Profile + Education -->
+          <div class="left-column">
+            <div class="about-image tilt" data-tilt>
+              <img src="profile.jpg" alt="Saurabh Pawal" />
+            </div>
+            <div class="education-section tilt">
+              <h2>Education</h2>
+
+              <div class="education-item">
+                <h3>B.Tech in Computer Science Engineering</h3>
+                <p>National Institute of Technology, Warangal</p>
+                <p>2022 – 2026</p>
+              </div>
+
+              <div class="education-item">
+                <h3>12th, CBSE</h3>
+                <p>
+                  Pratibha International School and Junior College, Maharashtra
+                </p>
+                <p>2020 – 2022</p>
+              </div>
+
+              <div class="education-item">
+                <h3>10th, CBSE</h3>
+                <p>SNBP International School, Pune</p>
+                <p>2007 – 2020</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-text">
+            <h2>About Me</h2>
+            <div class="floating-icons">
+              <i class="fab fa-python" title="Python Development"></i>
+              <i class="fab fa-react" title="React Frontend"></i>
+              <i class="fas fa-brain" title="AI/ML Expertise"></i>
+            </div>
+
+            <p>
+              Hi, I’m <strong>Saurabh Pawal</strong> — a passionate fullstack
+              developer and AI integration specialist. I love turning complex
+              ideas into clean,
+              <span class="highlight-text">scalable software</span>. With
+              <span class="highlight-text"
+                >over 3 years of hands-on experience</span
+              >, I’ve built
+              <span class="highlight-text">robust systems</span> using Python,
+              Django, React, and AI-powered tools that help businesses grow.
+            </p>
+
+            <p>
+              My journey spans everything from backend APIs and frontend UI/UX
+              to
+              <span class="highlight-text">cutting-edge AI solutions</span>
+              using LLMs and Transformers. Whether leading development teams or
+              experimenting with new technologies, I thrive at the intersection
+              of innovation and execution.
+            </p>
+
+            <ul class="about-list">
+              <li>
+                <i class="fas fa-laptop-code"></i>
+                <span class="highlight-text"
+                  ><strong>Lead Developer:-</strong></span
+                >
+                Delivered fullstack systems from scratch with scalable
+                architecture.
+              </li>
+              <li>
+                <i class="fas fa-robot"></i>
+                <span class="highlight-text"
+                  ><strong>AI Innovator:-</strong></span
+                >
+                Integrated intelligent pipelines using LLMs and Transformer
+                models.
+              </li>
+              <li>
+                <i class="fas fa-code"></i>
+                <span class="highlight-text"
+                  ><strong>Tech Stack:-</strong></span
+                >
+                Python, Django, React, Node.js, PostgreSQL, C++.
+              </li>
+              <li>
+                <i class="fas fa-users-cog"></i>
+                <span class="highlight-text"
+                  ><strong>Team Leadership:-</strong></span
+                >
+                Mentored developers and improved engineering workflows.
+              </li>
+              <li>
+                <i class="fas fa-lightbulb"></i>
+                <span class="highlight-text"
+                  ><strong>Always Evolving:-</strong> </span
+                >Continuously exploring new technologies and open-source tools.
+              </li>
+            </ul>
+
+            <hr class="section-divider" />
+</div>
+<div>
+            <h3 class="skills-title">Technical Skills & Interests</h3>
+            <div class="skills-grid extended-skills">
+              <div class="skill-box" title="Python">
+                <i class="fab fa-python"></i> Python
+              </div>
+              <div class="skill-box" title="React, Node.js, REST APIs">
+                <i class="fab fa-react"></i> React & Node.js
+              </div>
+              <div class="skill-box" title="LLMs, Transformers, NLP">
+                <i class="fas fa-brain"></i> AI/ML & LLMs
+              </div>
+              <div class="skill-box" title="PostgreSQL, MySQL, ORM">
+                <i class="fas fa-database"></i> PostgreSQL / MySQL
+              </div>
+              <div class="skill-box" title="C++">
+                <i class="fas fa-code"></i> C++
+              </div>
+              <div class="skill-box" title="Django">
+                <i class="fab fa-python"></i> Django
+              </div>
+              <div class="skill-box" title="Java">
+                <i class="fab fa-java"></i> Java
+              </div>
+              <div class="skill-box" title="HTML & CSS">
+                <i class="fab fa-html5"></i> HTML & CSS
+              </div>
+              <div class="skill-box" title="Data Structures & Algorithms">
+                <i class="fas fa-project-diagram"></i> Data Structures &
+                Algorithms
+              </div>
+              <div class="skill-box" title="Fullstack Development">
+                <i class="fas fa-paint-brush"></i>Fullstack Development
+              </div>
+              <div
+                class="skill-box"
+                title="Developer Tools: VS Code, Git/GitHub"
+              >
+                <i class="fas fa-tools"></i> VS Code, Git/GitHub
+              </div>
+              <div class="skill-box" title="Cryptography">
+                <i class="fas fa-user-secret"></i> Cryptography
+              </div>
+            </div>
+
+            <hr class="section-divider" />
+
+            <h3 class="skills-title">Soft Skills & Interests</h3>
+            <div class="tags">
+              <span>Leadership</span>
+              <span>Team Management</span>
+              <span>Communication</span>
+              <span>Time Management</span>
+              <span>Adaptability</span>
+              <span>Composure</span>
+              <span>Patience</span>
+              <span>Software Development</span>
+              <span>Business Management</span>
+            </div>
+
+            <div class="stats">
+              <div><strong>3+</strong><br />Years Experience</div>
+              <div><strong>8+</strong><br />Projects Delivered</div>
+              <div><strong>5+</strong><br />AI Tools Integrated</div>
+            </div>
+
+            <p style="margin-top: 20px">
+              Outside of work, I enjoy contributing to open-source, sketching
+              new product ideas, and keeping up with emerging AI research.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <div class="container">
+        <h2>Personal Projects</h2>
+        <div class="filter-buttons">
+          <button data-filter="all" class="active">All</button>
+          <button data-filter="fullstack">Fullstack</button>
+          <button data-filter="data">Data</button>
+        </div>
+        <div class="project-grid">
+          <div
+            class="project-card tilt"
+            data-category="data"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="Melody Manager.jpg"
+              alt="Melody Manager Music Library System"
+            />
+            <h3>Melody Manager</h3>
+            <p>Python-powered Music Library System with MySQL integration.</p>
+            <a
+              href="#"
+              class="button details-button"
+              data-project-id="melody-manager"
+              aria-label="Melody Manager Project Details"
+              >Details</a
+            >
+          </div>
+          <div
+            class="project-card tilt"
+            data-category="fullstack"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img src="Learn Trade.png" alt="Learn Trade Stock Trading System" />
+            <h3>Learn Trade</h3>
+            <p>
+              Stock Trading Portfolio Management System with real-time data.
+            </p>
+            <a
+              href="#"
+              class="button details-button"
+              data-project-id="learn-trade"
+              aria-label="Learn Trade Project Details"
+              >Details</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <section id="contact" class="contact-dark" data-aos="fade-up">
+        <div class="container contact-container">
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <h2>Contact Me</h2>
+              <ul>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <a href="mailto:21129saurabh@gmail.com"
+                    >21129saurabh@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <i class="fab fa-linkedin"></i>
+                  <a href="https://linkedin.com/in/saurabhpawal" target="_blank"
+                    >linkedin/saurabhpawal</a
+                  >
+                </li>
+                <li>
+                  <i class="fab fa-github"></i>
+                  <a href="https://github.com/saurabhpawal23" target="_blank"
+                    >github.com/saurabhpawal23</a
+                  >
+                </li>
+                <li>
+                  <i class="fas fa-file-download"></i>
+                  <a href="resume.pdf" target="_blank">Download Resume</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="contact-form">
+              <h3>Send a Message</h3>
+              <form id="contact-form">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                  aria-label="Your Name"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                  aria-label="Your Email"
+                />
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                  aria-label="Your Message"
+                ></textarea>
+                <button type="submit">Send</button>
+              </form>
+              <p id="form-response" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <a
+        href="resume.pdf"
+        class="fab-resume"
+        target="_blank"
+        title="Download Resume"
+        aria-label="Download Resume"
+      >
+        <i class="fas fa-file-download"></i>
+        <span>download resume</span>
+      </a>
+
+      <p>&copy; 2025 Saurabh Pawal. All rights reserved.</p>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3 id="modalProjectTitle"></h3>
+        <p id="modalProjectSummary"></p>
+        <!-- New element for the project summary -->
+        <img id="modalProjectImage" src="" alt="Project Image" />
+        <div class="modal-description-details">
+          <!-- Container for the detailed bullet points -->
+          <ul id="modalProjectDetailsList">
+            <!-- New element for bullet points -->
+            <!-- Details will be inserted here -->
+          </ul>
+        </div>
+        <div class="modal-tech-stack">
+          <h4>Technologies Used:</h4>
+          <ul id="modalTechList">
+            <!-- Tech icons/names will be inserted here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+    <script>
+      AOS.init({
+        once: true, // Only animate elements once as they scroll into view
+        duration: 800, // Duration of animation
+        easing: "ease-out-cubic", // Easing function for animation
+      });
+    </script>
+  </body>
+</html>
