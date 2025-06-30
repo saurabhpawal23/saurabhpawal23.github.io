@@ -2,7 +2,7 @@
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({Add commentMore actions
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior: "smooth",
     });
   });
